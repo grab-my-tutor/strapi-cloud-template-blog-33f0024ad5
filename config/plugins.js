@@ -1,14 +1,13 @@
-module.exports = () => ({
+module.exports = {
   graphql: {
+    enabled: true,
     config: {
-      endpoint: "/graphql",
-      shadowCRUD: true,
-      landingPage: false, // disable Sandbox everywhere
-      depthLimit: 7,
-      amountLimit: 100,
+      playgroundAlways: true,
+      defaultLimit: 10,
+      maxLimit: 100,
       apolloServer: {
         tracing: false,
       },
     },
   },
-});
+};
