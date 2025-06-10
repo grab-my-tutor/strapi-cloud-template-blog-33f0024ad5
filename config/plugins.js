@@ -7,7 +7,8 @@ module.exports = {
       defaultLimit: 10,
       maxLimit: 100,
       apolloServer: {
-        tracing: false,
+        introspection: true,
+        playground: true, // 👈 add this
       },
     },
   },
